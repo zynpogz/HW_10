@@ -1,0 +1,27 @@
+    1  clear
+    2  git config --global user.name zeynep
+    3  git config --global zynppogzz@gmail.com
+    4  git clone https://github.com/zynpogz/HW_10.git 
+    5  cd HW_10
+    6  touch ignore_text.txt
+    7  echo "ignore_text.txt" >> .gitignore
+    8  git status
+    9  git add .
+   10  git commit -m "Görev 1 tamamlandi: .gitignore ve ignore_text.txt eklendi"
+   11  pwd
+   12  touch main_test.txt
+   13  git add .
+   14  git commit -m "Görev 2: main_test.txt dosyasi olusturuldu"
+   15  git checkout -b develop
+   16  touch develop_test.txt
+   17  git add .
+   18  git commit -m "Görev 3: develop_test.txt dosyasi olusturuldu"
+   19  echo "Bu develop daldaki ilk iceriktir." >> develop_test.txt
+   20  git status
+   21  git add .
+   22  git commit -m "Görev 3: develop_test.txt icerigi guncellendi"
+   23  git checkout main
+   24  git merge develop
+   25  git log --oneline --graph
+   26  [200~history > command_list.csv~
+   27  history > command_list.csv
